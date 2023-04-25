@@ -13,7 +13,8 @@
 ####  Programación: ![Java](https://img.shields.io/badge/Java-orange?style=for-the-badge&logo=JAVA&logoColor=white)
 
 
-![Scrum Master ](https://user-images.githubusercontent.com/111541137/234304230-0ca1029a-2e17-4586-b536-ae0fff527fd2.gif)
+![Scrum Master ](https://user-images.githubusercontent.com/111541137/234306799-fa24ff4c-a854-445f-8b79-b1f7064af7eb.gif)
+
 
 #
 

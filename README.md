@@ -12,6 +12,9 @@
 ####  Laboratorio: ![Python](https://img.shields.io/badge/Python-%23323330.svg?style=for-the-badge&logo=Python&logoColor=blue) ![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=Javascript&logoColor=%23F7DF1E)
 ####  Programación: ![Java](https://img.shields.io/badge/Java-orange?style=for-the-badge&logo=JAVA&logoColor=white)
 
+
+![Scrum Master ](https://user-images.githubusercontent.com/111541137/234304230-0ca1029a-2e17-4586-b536-ae0fff527fd2.gif)
+
 #
 
 | **Número de semana** | **Scrum Master**     |

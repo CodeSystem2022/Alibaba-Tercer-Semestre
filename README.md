@@ -16,21 +16,7 @@
 ![Scrum Master ](https://user-images.githubusercontent.com/111541137/234306799-fa24ff4c-a854-445f-8b79-b1f7064af7eb.gif)
 
 
-#
-
-| **Número de semana** | **Scrum Master**     |
-|----------------------|----------------------|
-| :round_pushpin: Semana 1    | *Beltrado Gabriel*   |
-| :round_pushpin: Semana 2    | *Carballo Matías*    |
-| :round_pushpin: Semana 3    | *Escobar Ángel*      |
-| :round_pushpin: Semana 4    | *Germiniani Denise*  |
-| :round_pushpin: Semana 5    | *González Natalia*   |
-| :round_pushpin: Semana 6    | *Gutierrez Pablo*    |
-| :round_pushpin: Semana 7    | *Huamán Pérez Jorge* |
-| :round_pushpin: Semana 8    | *Lerotich Sebastián* |
-| :round_pushpin: Semana 9    | *Murúa Juan*         |
-
-#
+##  `Los integrantes del equipo son:`
 
 |                                                                                                                                              <img src="https://i.postimg.cc/QtwHyH4q/Gabriel.jpg" alt="Photo Carolina Quevedo" height=150>                                                                                                                                              | <img src="https://i.postimg.cc/nhn7f92F/Matias.jpg" alt="Photo Matías Carballo" height=150>|                                                                                                                                              <img src="https://i.postimg.cc/gJ9CtpyZ/Angel.jpg" alt="Photo Ángel Escobar" height=150>                                                                                                                                               |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|

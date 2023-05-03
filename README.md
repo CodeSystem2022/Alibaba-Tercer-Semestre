@@ -13,7 +13,7 @@
 ####  Programación: ![Java](https://img.shields.io/badge/Java-orange?style=for-the-badge&logo=JAVA&logoColor=white)
 
 
-![Scrum Master ](https://user-images.githubusercontent.com/111541137/234306799-fa24ff4c-a854-445f-8b79-b1f7064af7eb.gif)
+![Gif Master 1](https://user-images.githubusercontent.com/111541137/235677225-a1f744f4-1789-4113-bdbb-138713adff85.gif)
 
 
 ###  `Los intengrantes del equipo son: ` 

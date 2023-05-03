@@ -1,21 +1,21 @@
-package ar.com.system2023.MundoPc;
+package ar.com.system2023.mundopc;
 
 public class Orden {
     private final int idOrden;
-    private computadora computadora[];// Arreglo de objetos
+    private Computadora computadora[];// Arreglo de objetos
     private static int contadorOrdenes;
     private static final int MAX_COMPUTADORAS = 10;
     private int contadorComputadora;
-    
+
     // constructor vacio
     public Orden (){
         this.idOrden = ++Orden.contadorOrdenes;
-        this.computadora = new computadora[Orden.MAX_COMPUTADORAS];
-        
+        this.computadora = new Computadora[Orden.MAX_COMPUTADORAS];
+
     }
-    
+
     //metodo para agregar una nueva computadora al arreglo
-    public  void agregarComputadora(computadora computadora){
+    public  void agregarComputadora(Computadora computadora){
         if(this.contadorComputadora< Orden.MAX_COMPUTADORAS){
             this.computadora[this.contadorComputadora++] = computadora;
         }
@@ -23,7 +23,7 @@ public class Orden {
             System.out.println("Has superado el limite: "+Orden.MAX_COMPUTADORAS);
         }
     }
-    // Mostrar orden 
+    // Mostrar orden
     public void mostrarOrden(){
         System.out.println("Orden #: "+this.idOrden);
         System.out.println("Computadoras de la orden #:+this.idOrden");

@@ -18,3 +18,11 @@ console.log(persona.email);
 console.log(persona.edad);
 console.log(persona);
 console.log(persona.nombreComleto());
+
+//Otra forma de acceder a los atributos de un objeto
+let persona2 = new Object();
+persona2.nombre = "Carlos";
+persona2.direccion = "Saturno 15";
+persona2.tel = "55443322";
+console.log(persona2.tel);
+

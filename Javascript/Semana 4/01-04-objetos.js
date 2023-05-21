@@ -32,5 +32,14 @@ for(propiedad in persona){
     console.log(propiedad);
     console.log(persona[propiedad]);
 }
-
+console.log(persona['apellido']); //Accedemos como si fuera un arreglo
+//for in y accede,ps al objeto como si fuera un arreglo
+for(propiedad in persona){
+    console.log(propiedad);
+    console.log(persona[propiedad]);
+}
+console.log('Cambiamos y eliminamos un error');
+persona.apellida = 'Betancud'; // cambiamos dianmicamente un valor del  objeto
+delete persona.apellida;// Eliminamos el error
+console.log(persona);
 

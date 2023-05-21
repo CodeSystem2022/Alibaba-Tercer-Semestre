@@ -23,6 +23,14 @@ console.log(persona.nombreComleto());
 let persona2 = new Object();
 persona2.nombre = "Carlos";
 persona2.direccion = "Saturno 15";
-persona2.tel = "55443322";
-console.log(persona2.tel);
+persona2.telefono = "55443322";
+console.log(persona2.telefono);
+
+console.log(persona['apellido']); //Accedemos como si fuera un arreglo
+//for in y accede,ps al objeto como si fuera un arreglo
+for(propiedad in persona){
+    console.log(propiedad);
+    console.log(persona[propiedad]);
+}
+
 

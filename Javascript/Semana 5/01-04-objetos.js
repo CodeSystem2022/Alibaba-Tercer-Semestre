@@ -110,3 +110,32 @@ console.log(padre);
 let madre = new Persona3("Laura", "Quintero", "lquintero@gmail.com");
 console.log(madre);
 console.log(madre.nombreCompleto());
+
+//Uso de protitype
+Persona3.prototype.telefono = '256487961';
+console.log(padre);
+console.log(madre.telefono);
+madre.telefono= '654656154';
+console.log(madre.telefono);
+
+//Uso de call
+let persona4 = {
+    nombre: 'Juan',
+    apellido: 'Perez',
+    nombreCompleto2: function(titulo, telefono){
+        return titulo+': ' + this.nombre + ' '+ this.apellido+ ' '+telefono;
+        //return this.nombre+' '+this.apellido;
+    }
+}
+
+let persona5 = {
+    nombre: 'Carlos',
+    apellido: 'Lara'
+}
+
+console.log(persona4.nombreCompleto2('Lic.', '549618383834'));
+console.log(persona4.nombreCompleto2.call(persona5, 'Ing. ', '5492618585856'));
+
+//Método Apply
+let arreglo = ['Ing ', '5492618686865'];
+console.log(persona4.nombreCompleto2.apply(persona5, arreglo));

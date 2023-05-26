@@ -1,3 +1,5 @@
+// let persona3 = new Persona('Carla', 'Ponce'); No se puede crear un objecto sin antes haber inicializado la clase que le permite hacer la instancia.
+
 class Persona{
     constructor(nombre,apellido){
         this._nombre = nombre;

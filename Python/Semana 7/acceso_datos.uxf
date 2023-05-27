@@ -1,0 +1,44 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>50</x><y>30</y><w>210</w><h>230</h></coordinates><panel_attributes>&lt;&lt;conexion&gt;&gt;
+--
+_-DATABASE: String_
+_-USERNAME: String_
+_-PASSWORD: String_
+_-DB PORT: String_
+_-HOST: String_
+_-conexion: connection_
+_-cursor Cursor_
+--
+_+obtenerConexion(cls): Connection_
+_+obtenerCursor(cls): Cursor_
+_cerrar(cls)_
+--
+Responsabilidades:
+Administrar la conexion a la base 
+de datos</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>30</y><w>210</w><h>170</h></coordinates><panel_attributes>&lt;&lt;Persona&gt;&gt;
+--
+-id_persona: int
+-nombre: String
+-apellido: String
+-email: String
+--
++_str_(): String
++metodo Get/Set de cada atributo
+--
+Responsabilidades:
+Crear objetos de la entidad
+de Persona</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>440</y><w>210</w><h>220</h></coordinates><panel_attributes>&lt;&lt;PersonaDao&gt;&gt;
+--
+_SELECCIONAR: String_
+_INSERTAR: String_
+_ACTUALIZAR: String_
+_ELIMINAR: String_
+--
+_+seleccionar(cls)_
+_+insertar(cls, persona)_
+_+actualizar(cls, persona)_
+_+eliminar(cls, persona)_
+--
+Responsabilidades:
+Realizar las operaciones sobre la
+base de datos de la entidad
+Persona</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>250</y><w>260</w><h>320</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>240;300;11;299;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>190</y><w>30</w><h>270</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;250;10;10</additional_attributes></element></diagram>

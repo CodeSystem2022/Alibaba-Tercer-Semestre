@@ -24,6 +24,12 @@ class Persona{ //Clase padre
         return this._nombre+' '+this._apellido;
 
     }
+    // Sobreecribiendo el método de la clase padre
+    toString(){ //Regresa un string
+        //Se aplica el polimorfismo que significa = multiples formas en tiempo de ejecucion
+        // El método que se ejecuta depende si es una referencia de tipo padre o hija
+        return this.nombreCompleto();
+    }
 }
 
 class Empleado extends Persona{ //Clase hija
@@ -71,3 +77,8 @@ console.log(persona2.apellido);
 let empleado1 = new Empleado('María', 'Gimenez', 'Sistema');
 console.log(empleado1);
 console.log(empleado1.nombreCompleto());
+
+// Object.prototype.toString Esta es la manera de acceder a atributos y métodos de manera dinámica
+
+console.log(empleado1.toString());
+

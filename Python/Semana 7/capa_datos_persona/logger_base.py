@@ -8,3 +8,11 @@ log.basicConfig(level=log.DEBUG,
                     log.FileHandler('capa_datos.log'),
                     log.StreamHandler()
                 ])
+
+f __name__== '__main__':
+
+    log.debug('Mensaje a nivel debug')
+    log.info('Mensaje a nivel info')
+    log.warning('Mensaje a nivel warning')
+    log.error('Mensaje a nivel error')
+    log.critical('Mensaje a nivel critical')

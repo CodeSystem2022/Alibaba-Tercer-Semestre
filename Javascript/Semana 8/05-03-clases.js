@@ -1,9 +1,15 @@
 //Let persona3 = new Persona('Carla', ' Ponce'); esto no se debe hacer: Persona is no...
 
 class Persona{ //Clase padre
+
+    static contadorObjetosPersona = 0;//Atributo estático
+    email = 'Valor default email'; // Atributo No estático
+
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
+        Persona.contadorObjetosPersona++;
+        console.log('Se incrementa el contador a: '+Persona.contadorObjetosPersona);
     }
     get nombre(){
         return this._nombre;
@@ -18,7 +24,7 @@ class Persona{ //Clase padre
         this._apellido = apellido;
     }
     nombreCompleto(){
-        return this._nombre+ '' + this._apellido;
+        return this._nombre+' '+ this._apellido;//corregido
     }
     //Sobreescribiendo  el método de la clase padre (Object)
     toString(){  //Regresa un String
@@ -35,7 +41,7 @@ class Persona{ //Clase padre
     }
 }
 class Empleado extends Persona{ // Clase hija 
-    constructor(nombre, apellido, departemento){
+    constructor(nombre, apellido, departamento){//corregido
         super(nombre, apellido);
         this._departamento = departamento;
     }
@@ -47,7 +53,7 @@ class Empleado extends Persona{ // Clase hija
     }
     //Sobreescritura
     nombreCompleto(){
-        return super.nombreCompleto() + ' ' + this._departamento;
+        return super.nombreCompleto() +' '+ this._departamento;
     }
 }
 let persona1 = new Persona('Martin','Perez');
@@ -71,3 +77,10 @@ Persona.saludar();
 Persona.saludar2(persona1);
 Empleado.saludar();
 Empleado.saludar2(empleado1);
+
+console.log(Persona.contadorObjetosPersona);
+console.log(Empleado.contadorObjetosPersona);
+
+console.log(persona1.email);
+console.log(empleado1.email);
+//console.log(Persona.email); No puede acceder desde la clase

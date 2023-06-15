@@ -9,7 +9,7 @@ class Empleado extends Persona{
     }
     // Solo agregamos el get para el id empleado
     get idEmpleado(){
-        return this.idEmpleado;
+        return this._idEmpleado;
     }
     get sueldo(){
         this._sueldo;

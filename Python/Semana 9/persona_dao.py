@@ -36,3 +36,36 @@ if __name__=='__main__':
     personas= PersonaDao.seleccionar()
     for persona in personas:
         log.debug(persona)
+
+
+
+        
+
+    @classmethod
+    def actualizar(cls,persona):
+        with Conexion.obtenerConexion():
+            with Conexion.obtenerCursor() as cursor:
+                Valores = (persona.nombre, persona.apellido, persona.email, persona.id_persona)
+                cursor.execute(cls._ACTUALIZAR, valores)
+                log.debug(f'persona actualizada: {persona}')
+                return  cursor.
+
+
+if __name__ == '__main__':
+  #Actualizar un registro
+  persona1 = persona(1,'Juan jose','pena', 'jjpena@mail.com')
+  personas_actualizdas = personaDAO.actualizar(persona1)
+  log.debug(f'Personas actualizadas: {personas_actualizdas}')
+
+
+    # Insertar un registro
+    #persona1 = Persona(nombre = 'Omero', apellido= 'Ramos',email= 'omeror@mail.com')
+    #personas_insertadas = PersonaDAO.insertar(persona)
+   # log.debug(f'Personas insertadas: {personas_insertadas}')
+
+
+    # Seleccionamos objetos
+    personas = personaDAO.seleccionar()
+    for persona in personas:
+        log.debug(persona)
+

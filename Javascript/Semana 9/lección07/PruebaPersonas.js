@@ -96,20 +96,20 @@ class Cliente extends Persona{
 
 }
 // prueba clase persona
-let persona1=new Persona('Juan','Perez',32);
+let persona1=new Persona(' Juan','Perez',32);
 console.log(persona1.toString());
-let persona2=new Persona('Carla','Ortega',22);
+let persona2=new Persona(' Carla','Ortega',22);
 console.log(persona2.toString());
 
 //Prueba clase empleado
-let empleado1=new Empleado('Pedro','Roman' ,18,5000);
+let empleado1=new Empleado(' Pedro','Roman' ,18,5000);
 console.log(empleado1.toString());
 
-let empleado2=new Empleado('Jonas','Torres' ,30,7000);
+let empleado2=new Empleado(' Jonas','Torres' ,30,7000);
 console.log(empleado2.toString());  
 // prueba clase Cliente
-let cliente1= new Cliente('Miguel','Zala',29,new Date());
+let cliente1= new Cliente(' Miguel','Zala',29,new Date());
 console.log(cliente1.toString());    
 
-let cliente2= new Cliente('Natalia','Ortega',22,new Date()); 
+let cliente2= new Cliente(' Natalia','Ortega',22,new Date()); 
 console.log(cliente2.toString());   

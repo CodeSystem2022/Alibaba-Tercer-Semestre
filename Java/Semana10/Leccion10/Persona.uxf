@@ -1,0 +1,21 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>70</x><y>70</y><w>210</w><h>300</h></coordinates><panel_attributes>Persona
+--
+- id:int
+- nombre : String
+- tel: String
+- email: String
+_-numeroPersonas: int_
+--
++getI()
++setId(id:int)
++getNombre()
++getNombre(Nombre: String)
++getTel()
++getTel(tel: String)
++getEmail()
+getEmail(email: String)
++toString
+--
+Responsibilities
+--Creacion de objetos de tipo
+Persona</panel_attributes><additional_attributes></additional_attributes></element></diagram>

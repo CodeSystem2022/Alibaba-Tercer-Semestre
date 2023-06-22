@@ -56,6 +56,22 @@ class Orden{
             console.log(" No se puede agregar mas productos")
         }
     }//fin del metodo agregarProducto
+
+    calcularTotal(){
+        let totalVenta = 0;
+        for(let producto of this._productos){
+            totalVenta += producto.precio;
+        } //Fin Ciclo For
+        return totalVenta;
+    } //Fin del método calcularTotal
+
+    mostrarOrden(){
+        let productosOrden = ' ';
+        for(let producto of this._productos){
+            productosOrden += producto.toString()+' ';            
+        }//Fin del ciclo for
+        console.log(`Orden: ${this._idOrden}, Total: $${this.calcularTotal()}, Productos:${productosOrden()}`);
+    }//Fin método mostrar orden
 }//Fin de la clase
 
 let producto1 = new Producto('Pantalón', 200);

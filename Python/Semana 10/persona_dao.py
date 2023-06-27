@@ -1,5 +1,5 @@
-from Persona import Persona
-from conexion import Conexion
+from Persona import *
+from conexion import *
 from logger_base import log
 
 
@@ -12,8 +12,8 @@ class personaDAO:
                     Update ->Actualizar
                     Delete -> Eliminar
     """
-    _SELECCIONAR = 'SELECT * FROM persona ORDER BY id_Personar'
-    _INSERTAR = 'INSERT INTO persona(nombre, apellido, email) VALUES (%s, %s, %S)'
+    _SELECCIONAR = 'SELECT * FROM persona ORDER BY id_persona'
+    _INSERTAR = 'INSERT INTO persona(nombre, apellido, email) VALUES (%s, %s, %s)'
     _ACTUALIZAR = 'UPDATE persona SET nombre=%s, apellido=%s, email=%s WHERE id_persona=%s'
     _ELIMINAR = 'DELETE FROM persona WHERE id_persona=%s'
 
@@ -60,18 +60,18 @@ class personaDAO:
 
 if __name__ == '__main__':
     # Eliminar un registro
-    persona1 = Persona(id_persona=8)
+    # persona1 = Persona(id_persona=8)
     # Actualizar un registro
-# persona1 = Persona(1, 'Juan jose', 'pena', 'jjpena@mail.com')
-# personas_actualizadas = personaDAO.actualizar(persona1)
-# log.debug(f'Personas actualizadas: {personas_actualizadas}')
+    # persona1 = Persona(1, 'Juan jose', 'pena', 'jjpena@mail.com')
+    # personas_actualizadas = personaDAO.actualizar(persona1)
+    # log.debug(f'Personas actualizadas: {personas_actualizadas}')
 
-# Insertar un registro
-# persona1 = Persona(nombre = 'Omero', apellido= 'Ramos',email= 'omeror@mail.com')
-# personas_insertadas = personaDAO.insertar(persona1)
-# log.debug(f'Personas insertadas: {personas_insertadas}')
+    # Insertar un registro
+    # persona1 = Persona(nombre = 'Omero', apellido= 'Ramos',email= 'omeror@mail.com')
+    # personas_insertadas = personaDAO.insertar(persona1)
+    # log.debug(f'Personas insertadas: {personas_insertadas}')
 
 # Seleccionamos objetos
-personas = personaDAO.seleccionar()
-for persona in personas:
-    log.debug(persona)
+    personas = personaDAO.seleccionar()
+    for persona in personas:
+        log.debug(persona)

@@ -3,6 +3,7 @@ import psycopg2 as bd
 from logger_base import log
 import sys
 
+
 class Conexion:
     _DATABASE = 'test_bd'
     _USERNAME = 'postgres'
@@ -16,11 +17,11 @@ class Conexion:
     def obtenerConexion(cls):
         if cls._conexion is None:
             try:
-                cls._conexion =  bd.connect(host=cls._HOST,
-                                            user=cls._USERNAME,
-                                            password=cls._PASSWORD,
-                                            port=cls._BD_PORT,
-                                            database=cls._DATABASE)
+                cls._conexion = bd.connect(host=cls._HOST,
+                                           user=cls._USERNAME,
+                                           password=cls._PASSWORD,
+                                           port=cls._BD_PORT,
+                                           database=cls._DATABASE)
                 log.debug(f'Conexion Exitosa: {cls._conexion}')
                 return cls._conexion
             except Exception as e:
@@ -28,8 +29,6 @@ class Conexion:
                 sys.exit()
         else:
             return cls._conexion
-
-
 
     @classmethod
     def obtenerCursor(cls):
@@ -42,7 +41,8 @@ class Conexion:
                 log.error(f'Ocurrio un error: {e}')
                 sys.exit()
         else:
-             return cls._cursor
+            return cls._cursor
+
 
 if __name__ == ' __main__ ':
     Conexion.obtenerConexion()

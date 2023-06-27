@@ -2,7 +2,6 @@ from Persona import Persona
 from conexion import Conexion
 from logger_base import log
 
-
 class personaDAO:
     """"
     DAO significa: Data Access Object
@@ -75,3 +74,4 @@ if __name__ == '__main__':
 personas = personaDAO.seleccionar()
 for persona in personas:
     log.debug(persona)
+    

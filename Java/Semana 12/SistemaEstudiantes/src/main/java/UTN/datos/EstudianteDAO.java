@@ -77,7 +77,7 @@ public class EstudianteDAO {
         
     public static void main(String[] args){
         //Listar los estudiantes
-        var estudiantesDao = new EstudianteDAO();
+        var estudianteDao = new EstudianteDAO();
         System.out.println("Listado de estudiantes: ");
         List<Estudiante> estudiantes = estudianteDao.listarEstudiantes();
         estudiantes.forEach(System.out::println);//Función lambda para imprimir

@@ -15,7 +15,7 @@ public class Conexion {
 
         // cargamos la clase del driver de mysql en memoria
         try {
-            Class.forName("com.mysql.cj.jdbc.driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             conexion = DriverManager.getConnection(url, usuario, password);
         } catch (ClassNotFoundException | SQLException e){
             System.out.println("Ocurrio un error en la conexion: "+e.getMessage());

@@ -79,7 +79,7 @@ public class EstudianteDAO {
     public boolean agregarEstudiante(Estudiante estudiante){
         PreparedStatement ps; 
         Connection con = getConnection();
-        String sql = "INSERT INTO estudiantes2022 (nombre, apellido, telefono, email) VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO estudiantes2022 (nombre, apellido, telefono, email) VALUES (?, ?, ?, ?)';
         try{
             ps = con.prepareStatement(sql);
             ps.setString(1, estudiante.getNombre());

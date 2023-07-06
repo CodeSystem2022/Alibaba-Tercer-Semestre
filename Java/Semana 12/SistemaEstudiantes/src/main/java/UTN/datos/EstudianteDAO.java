@@ -1,6 +1,6 @@
 package UTN.datos;
 
-import static UTN.conexion.Conexion.getConnection;
+import UTN.dominio.Estudiante;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-import UTN.dominio.Estudiante;
+import static UTN.conexion.Conexion.getConnection;
 
 public class EstudianteDAO {
     // Método listar

@@ -124,9 +124,9 @@ public class EstudianteDAO {
     } // Fin método modificarEstudiante
 
     public static void main(String[] args) {
-        var estudianteDao = new EstudianteDao();
+        var estudianteDao = new EstudianteDAO();
         // Modificar estudiante
-        var estudianteModificado = new Estudiante(1, "Juan Carlos", "Juarez", "55545454665", "jjuarez@mail.com");
+        var estudianteModificado = new Estudiante(1, "Juan Carlos", "Juarez", "55545665", "jjuarez@mail.com");
         var modificado = estudianteDao.modificarEstudiante(estudianteModificado);
         if (modificado)
             System.out.println("Estudiante modificado: " + estudianteModificado);
@@ -134,7 +134,7 @@ public class EstudianteDAO {
             System.out.println("No se modificó el estudiante: " + estudianteModificado);
 
         /*// Agregar estudiante
-        var nuevoEstudiante = new Estudiante("Carlos", "Lara", "55655555", "carlosl@mail.com");
+        var nuevoEstudiante = new Estudiante("Carlos", "Lara", "5555555", "carlosl@mail.com");
         var agregado = estudianteDao.agregarEstudiante(nuevoEstudiante);
         if (agregado)
             System.out.println("Estudiante agregado: " + nuevoEstudiante);
